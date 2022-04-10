@@ -14,4 +14,9 @@ La librería twint extrae distintos metadatos para cada tweet, más allá del te
 Lo que el archivo "data_extractor.py" hace es, escencialmente, en base a un archivo de entrada, extraer el texto de cada tweet, guardándolo en un archivo nuevo con un tweet (pero ahora, solo texto) por línea. De esta forma, se evita tener el resto de la metadata obtenida por la librería.
 
 # Armado e implementación del modelo
-El procesamiento de los datos y el armado del modelo se realiza principalmente en el archivo "graph_generator.py.". Utiliza el paquete ".tokenize" del kit de herramientas de lenguaje natural de Python, el módulo de Python "Pickle", la librería "networkx" y
+El procesamiento de los datos y el armado del modelo se realiza principalmente en el archivo "graph_generator.py.". Utiliza el paquete ".tokenize" del kit de herramientas de lenguaje natural de Python, el módulo de Python "Pickle", la librería "networkx" para la creación, manipulación y visualización de grafos y el módulo "pyplot" de la libreria "Matplotlib" para la visualización de los grafos en caso de así desearlo.
+
+# Experimentación
+
+Finalmente, él archivo "bot.py" es necesario para simular tweets utilizando el modelo construido. Este archivo lee el modelo exportado en formato ".gml" y simula un camino aleatorio usando la función "simulate_tweet()", dentro de este archivo vuelve a usarse a librería "networkx".
+
